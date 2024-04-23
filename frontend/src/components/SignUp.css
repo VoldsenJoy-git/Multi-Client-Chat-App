@@ -1,0 +1,47 @@
+ .animatedButton {
+  background: none !important;
+  position: relative !important;
+  overflow: hidden !important;
+  color: #ac7373;
+  transition: 0.5s !important;
+} 
+
+.animatedButton:hover{
+  color: rgb(35, 138, 66) !important;
+  font-weight: 700 !important;
+
+}
+
+.animatedButton::before {
+  content: "" !important;
+  position: absolute !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 180% !important;
+  background: blueviolet !important;
+  z-index: -1 !important;
+  transition: 0.5s !important;
+  top: 0 !important;
+  border-radius: 0 0 50% 50% !important;
+}
+
+.animatedButton:hover::before {
+  height: 0% !important;
+}
+
+.animatedButton::after {
+  content: "" !important;
+  position: absolute !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 0% !important;
+  background: rgb(194, 91, 27) !important;
+  z-index: -1 !important;
+  transition: 0.5s !important;
+  top: 0 !important;
+  border-radius: 0 0 50% 50% !important;
+}
+
+.animatedButton:hover::after {
+  height: 180% !important;
+}

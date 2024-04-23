@@ -1,0 +1,153 @@
+/* form {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 20px;
+  background: transparent;
+  border: 0px;
+}
+
+.wrapper{
+  backdrop-filter: blur(30px);
+}
+
+.input-box {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+.eye-icon {
+  cursor: pointer; 
+  padding-right: 10px; 
+  font-size: 1.9em; 
+  color: #110327; 
+}
+.input-box input {
+  height: 70px;
+  padding: 15px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  flex: 1;
+}
+
+.input-box .icon {
+  margin-right: 10px;
+  color: #464444;
+}
+
+button[type="submit"] {
+  border: 1px solid #794fb4;
+  background: none;
+  padding: 10px 20px;
+  font-size: 20px;
+  cursor: pointer;
+  margin: 10px;
+  color: #fff;
+  transition: 0.8s ;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+button[type="submit"]:hover{
+  color: rgb(36, 5, 64);
+}
+button[type="submit"]::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 180%;
+  background: blueviolet;
+
+  z-index: -1;
+  transition: 0.8s;
+  top: 0;
+  border-radius: 0 0 50% 50%;
+}
+button[type="submit"]:hover::before{
+  height: 0%;
+}
+
+
+.input-box input::placeholder {
+position: absolute;
+transition: 0.2s;
+top: 20px;
+left: 20px;
+color: #272424; 
+font-size: 17px;
+} */
+
+
+/* .input-box input:focus::placeholder,
+.input-box input:valid::placeholder {
+position: absolute;
+top: -0;
+left: 15px;
+background-color: var(--primary-color);
+border-radius: 30px;
+padding: 0 10px;
+font-size: 13px;
+color: var(--black-color);
+z-index: 1;
+} */
+
+
+
+.animatedButton {
+  background: none !important;
+  position: relative !important;
+  overflow: hidden !important;
+  color: #fff;
+  transition: 0.5s !important;
+} 
+
+.animatedButton:hover{
+  color: rgb(39, 12, 64) !important;
+  font-weight: 700 !important;
+
+}
+
+/* .animatedButton:hover + .buttonText {
+  animation: 2s anim-lineUp ease-out infinite !important;
+} */
+
+.animatedButton::before {
+  content: "" !important;
+  position: absolute !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 180% !important;
+  background: blueviolet !important;
+  z-index: -1 !important;
+  transition: 0.5s !important;
+  top: 0 !important;
+  border-radius: 0 0 50% 50% !important;
+}
+
+.animatedButton:hover::before {
+  height: 0% !important;
+}
+
+
+.animatedButton::after {
+  content: "" !important;
+  position: absolute !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 0% !important;
+  background: rgb(21, 204, 88) !important;
+  z-index: -1 !important;
+  transition: 0.5s !important;
+  top: 0 !important;
+  border-radius: 0 0 50% 50% !important;
+}
+
+.animatedButton:hover::after {
+  height: 180% !important;
+}
+
+
+
