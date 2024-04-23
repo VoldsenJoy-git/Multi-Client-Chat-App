@@ -1,7 +1,5 @@
-## 
-Backend   nodemon index.js
-frontend  npm start
-##
+## Backend   nodemon index.js
+## frontend  npm start
 
 # Getting Started with Create React App
 
